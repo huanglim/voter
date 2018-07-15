@@ -128,7 +128,10 @@ if __name__ == '__main__':
     start_time = datetime.now()
 
     #use proxy agent to fetch the proxies
-    order = "0989ce101fb2e2b7626b9d1861d6d036"
+    order = ""
+    if not order:
+        print("Please update the order number !")
+        raise Exception
     apiUrl = "http://api.ip.data5u.com/dynamic/get.html?order="+order+"&sep=3"
     fetchSecond = 10
 
