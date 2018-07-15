@@ -19,9 +19,8 @@ logging.basicConfig(level=logging.INFO,
                     filemode='a'
     )
 
-host = '9.110.24.227'
-port = 4444
-REMOTE = True
+
+REMOTE = False
 
 USER_AGENTS = [
 "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36",
@@ -129,9 +128,9 @@ if __name__ == '__main__':
     start_time = datetime.now()
 
     #use proxy agent to fetch the proxies
-    order = "b7b4fdc28dd613163dc2b85ba550c3ca"
+    order = "0989ce101fb2e2b7626b9d1861d6d036"
     apiUrl = "http://api.ip.data5u.com/dynamic/get.html?order="+order+"&sep=3"
-    fetchSecond = 6
+    fetchSecond = 10
 
     run_get_proxies_vip(apiUrl, proxy_queue, fetchSecond)
 
