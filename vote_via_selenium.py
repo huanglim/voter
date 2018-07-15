@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO,
                     filemode='a'
     )
 
-
+ORDER = ''
 REMOTE = False
 
 USER_AGENTS = [
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     start_time = datetime.now()
 
     #use proxy agent to fetch the proxies
-    order = ""
+    order = ORDER
     if not order:
         print("Please update the order number !")
         raise Exception
